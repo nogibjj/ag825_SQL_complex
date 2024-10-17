@@ -1,10 +1,11 @@
 from query import query
 from extract import extract
 from transform_load import load
-import os
-from databricks import sql
-from dotenv import load_dotenv
-import csv
+
+# import os
+# from databricks import sql
+# from dotenv import load_dotenv
+# import csv
 
 
 def test_extract():
