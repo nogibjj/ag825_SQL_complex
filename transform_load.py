@@ -44,6 +44,7 @@ def load():
 
             cursor.close()
             connection.close()
+    return "Success"
 
 
 if __name__ == "__main__":
