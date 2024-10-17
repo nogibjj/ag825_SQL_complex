@@ -24,7 +24,7 @@ def load():
     ) as connection:
         with connection.cursor() as cursor:
             cursor.execute(
-                """ CREATE OR REPLACE TABLE ag825_cancerDB
+                """ CREATE TABLE IF NOT EXISTS ag825_cancerDB
                            (id int,
                             diagnosis string,
                             radius_mean float,
