@@ -1,6 +1,7 @@
-from query import query
 from extract import extract
 from transform_load import load
+
+from query import query
 
 # import os
 # from databricks import sql
@@ -43,6 +44,6 @@ def test_query():
 
 
 if __name__ == "__main__":
-    test_query()
-    test_load()
     test_extract()
+    test_load()
+    test_query()
