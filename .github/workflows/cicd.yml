@@ -23,7 +23,12 @@ jobs:
       - name: lint
         run: make lint
       - name: test
+        env:
+          DATABRICKS_API_KEY: ${{ secrets.DATABRICKS_API_KEY }}
+          DATABRICKS_SERVER_HOST_NAME: ${{ secrets.DATABRICKS_SERVER_HOST_NAME }}
+          DATABRICKS_SERVER_HTTP: ${{ secrets.DATABRICKS_SERVER_HTTP }}
         run: make test
+
       - name: format
         run: make format
       - name: generate
