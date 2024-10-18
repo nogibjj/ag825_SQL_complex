@@ -18,7 +18,8 @@ def query():
         with connection.cursor() as cursor:
             cursor.execute(
                 """ 
-                SELECT diameter_catg AS Diameter_Category, COUNT(DISTINCT id) AS Number_of_records
+                SELECT diameter_catg AS Diameter_Category, 
+                COUNT(DISTINCT id) AS Number_of_records
                 FROM
                 (
                     SELECT DISTINCT *, 
